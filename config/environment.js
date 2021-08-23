@@ -2,6 +2,15 @@
 
 module.exports = function (environment) {
   let ENV = {
+    firebaseConfig: {
+      apiKey: 'AIzaSyCkjRMKYdXeXyc07tPmh47ogM8d7eJeY_M',
+      authDomain: 'clarus-movie-rating.firebaseapp.com',
+      databaseURL: 'https://clarus-movie-rating.firebaseapp.com',
+      projectId: 'clarus-movie-rating',
+      storageBucket: 'clarus-movie-rating.appspot.com',
+      messagingSenderId: '592502336706',
+      appId: '1:592502336706:web:a12b7824924bd8c91e9f5b',
+    },
     modulePrefix: 'movierating',
     environment,
     rootURL: '/',

@@ -1,0 +1,25 @@
+<div class='header'>
+  <h2>Add New Movie!</h2>
+  <p>Fill in a movie name and description</p>
+</div>
+<div class='movie-form'>
+  <ul class='movie-publish'>
+    <li class='input'>
+      {{input value=title placeholder='Title'}}
+    </li>
+    <li class='input-textarea'>
+      {{textarea value=description placeholder='desciption'}}
+    </li>
+    <li>
+      <button type='button' {{on 'click' this.publishMovie}}>Publish</button>
+    </li>
+  </ul>
+</div>
+
+<section>
+  <div><Movies @movies={{@model}} /></div>
+  {{#each @model as |movies|}}
+
+    <div>{{movies.type}}</div>
+  {{/each}}
+</section>

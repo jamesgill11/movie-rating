@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+button {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+.body {
+  padding: 15px;
+}
+
+.header {
+  padding: 50px;
+  background: #2d90d2;
+}
+
+.header h2 {
+  font-size: 2em;
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+}
+
+.header p {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 10px 30px 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #016aba;
+  border-radius: 5px;
+  border: solid 1px #fff;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  display: inline-block;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.movie-form {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-form ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.movie-form li {
+  height: 2.5em;
+}
+
+.input {
+}

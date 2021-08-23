@@ -66,5 +66,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "firebase": "^8.10.0",
+    "firebase-tools": "^9.16.5"
   }
 }

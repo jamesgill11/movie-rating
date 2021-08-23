@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Movierating</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/movierating.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link
+      integrity=""
+      rel="stylesheet"
+      href="{{rootURL}}assets/movierating.css"
+    />
 
     {{content-for "head-footer"}}
   </head>
@@ -21,5 +25,23 @@
     <script src="{{rootURL}}assets/movierating.js"></script>
 
     {{content-for "body-footer"}}
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyCkjRMKYdXeXyc07tPmh47ogM8d7eJeY_M',
+        authDomain: 'clarus-movie-rating.firebaseapp.com',
+        projectId: 'clarus-movie-rating',
+        storageBucket: 'clarus-movie-rating.appspot.com',
+        messagingSenderId: '592502336706',
+        appId: '1:592502336706:web:bdf5d8212eb536331e9f5b',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

@@ -1,0 +1,20 @@
+<div class='header'>
+  <h2>Add New Review!</h2>
+  <p>Fill in a all fields</p>
+</div>
+<div class='movie-form'>
+  <ul class='movie-publish'>
+    <li class='input'>
+      {{input value=title placeholder='Title'}}
+    </li>
+    <li class='input-textarea'>
+      {{textarea value=description placeholder='Description'}}
+    </li>
+    <li>
+      {{input value=starrating placeholder='Star Rating'}}
+    </li>
+    <li>
+      <button type='button' {{on 'click' this.publishReview}}>Publish</button>
+    </li>
+  </ul>
+</div>
